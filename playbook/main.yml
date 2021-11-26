@@ -1,0 +1,17 @@
+---
+
+- name: some deployment
+  hosts: target
+  gather_facts: false
+  vars:
+    user: someuser
+  tasks:
+
+    - name: template
+      become: true
+      template:
+        src: template/hello.j2
+        dest: /tmp/hello.txt
+        mode: 0640
+        owner: root
+        group: root

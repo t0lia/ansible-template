@@ -1,0 +1,8 @@
+---
+
+all:
+  hosts:
+    target:
+      ansible_host: somehost.com
+      ansible_user: someuser
+      ansible_private_key_file: path/to/private/key

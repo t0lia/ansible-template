@@ -1,0 +1,9 @@
+---
+
+all:
+  hosts:
+    target:
+      ansible_host: 192.168.56.11
+      ansible_user: vagrant
+      ansible_private_key_file: >
+        /Users/apozdniakov/src/ansible-template/vagrant/.vagrant/machines/ubuntu11/virtualbox/private_key
